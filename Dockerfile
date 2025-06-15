@@ -4,7 +4,7 @@ ARG DEBIAN_VERSION=bookworm
 
 FROM --platform=$BUILDPLATFORM scratch AS base
 
-ARG VERSION_ARG="v1.4.2"
+ARG VERSION_ARG="0.0"
 ADD https://github.com/getumbrel/umbrel.git#${VERSION_ARG} /
 
 # Apply custom patches
